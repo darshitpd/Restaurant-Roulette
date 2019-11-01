@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SingleRestaurant"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/firstLayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="WINNER!"
+        android:textSize="30dp"
+        android:id="@+id/winner"
+        android:layout_margin="5dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/subheader"
+            android:text="Swipe right to get another option"/>
+
+
+        <TextView
+        android:id="@+id/singleRestaurantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/singleRestaurantImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher_background"
+        android:maxHeight="3dp"
+        android:maxWidth="5dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationImage"
+            android:src="@drawable/ic_baseline_location_on_24px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleRestaurantAddress"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_phone_24px"
+            android:layout_margin="5dp"
+            android:id="@+id/phoneImage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singleRestaurantPhone"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More info on yelp"
+        android:onClick="moreYelpOnClick"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:id="@+id/moreButton"
+        android:layout_margin="5dp"
+        />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLayout"
+        android:background="@color/colorPrimary"
+        android:text="Try Again!"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:onClick="tryAgainOnClick"
+        android:id="@+id/tryAgainButton"/>
+</RelativeLayout>
